@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Тренажёр ЭМО</title>
+  <link rel="stylesheet" href="css/styles.css">
+</head>
+<body class="page-body">
+  <main class="trainer">
+    <nav class="trainer__nav" id="page-nav" aria-label="Страницы заданий"></nav>
+    <section class="trainer__board">
+      <div class="trainer__image-wrap">
+        <img class="trainer__image" id="page-image" src="" alt="Изображение задания" draggable="false">
+      </div>
+      <p class="trainer__label" id="answer-label">Напечатай:</p>
+      <div class="trainer__answer-row">
+        <input class="trainer__input" id="answer-input" type="text" autocomplete="off">
+        <span class="trainer__check" id="submit-button" role="button" tabindex="0" aria-label="Ответить">
+          <img class="trainer__check-image" src="img/check3.png" alt="" draggable="false">
+          <img class="trainer__check-image trainer__check-image--hover" src="img/check1.png" alt="" draggable="false">
+        </span>
+      </div>
+      <img class="trainer__close" id="reset-button" src="img/check2.png" alt="Перезапустить тренажёр" role="button" tabindex="0" draggable="false">
+    </section>
+  </main>
+  <script src="js/script.js"></script>
+</body>
+</html>
